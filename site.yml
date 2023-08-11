@@ -1,9 +1,0 @@
----
-  # thread3 -> depends_on: thread0
-- import_playbook: infra-dh.yml
-- import_playbook: infra-dh-containers.yml
-
-  # thread5 -> depends_on: thread4
-- import_playbook: generic-linux-reboot.yml
-
-- import_playbook: final-infra-dh-guac-connection-lists.yml

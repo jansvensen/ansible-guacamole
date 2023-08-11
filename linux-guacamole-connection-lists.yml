@@ -3,11 +3,9 @@
   become: true
   vars_files:
     - vars/generic.yml
-
   tasks:
 
 # windows
-
   - name: guac-connection - group windows - rdp
     include_tasks: tasks/docker_container_guac_connection_list.yml
     vars:
