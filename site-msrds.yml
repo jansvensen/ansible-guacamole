@@ -1,0 +1,11 @@
+---
+- import_playbook: infra-dh-containers.yml
+  tags:
+    - docker_container_traefik
+
+- import_playbook: final-infra-dh-guac-connection-lists.yml
+  tags:
+    - windows_rdcb_rdp
+    - windows_rdcb_ssh
+    - windows_rdsh_rdp
+    - windows_rdsh_ssh
