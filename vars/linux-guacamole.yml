@@ -60,7 +60,7 @@ docker_container_guac_volume_dir: "{{ docker_container_volume_base_dir }}/{{ doc
 
 guac_mfa_enabled: '{{ vault_global_guac_mfa_enabled }}'
 
-guac_db_name: '{{ domain_netbios_name }}'
+guac_db_name: '{{ win.domain.netbios_name }}'
 guac_db_user: '{{ domain_admin_user_short }}'
 guac_db_password: '{{ domain_admin_password }}'
 guac_db_root_password: '{{ domain_admin_password }}'
